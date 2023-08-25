@@ -41,6 +41,7 @@ const displayPhones = (phones) => {
   toggleSpinner(false);
 };
 
+//search button functionality  =======================
 document.getElementById("search-btn").addEventListener("click", function () {
   toggleSpinner(true);
   const searchFeild = document.getElementById("search-feild");
@@ -49,6 +50,7 @@ document.getElementById("search-btn").addEventListener("click", function () {
   searchFeild.value = "";
 });
 
+//===============loader =================
 const toggleSpinner = (isLoading) => {
   const loaderSection = document.getElementById("loader");
   if (isLoading) {
